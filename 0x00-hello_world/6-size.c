@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- *main - "Size of various types"
+ *main - Prints "Size of various types"
  *Return: 0
  */
 int main(void)
@@ -10,7 +10,7 @@ int main(void)
 	double doubleType;
 	char charType;
 	long longType;
-	long long longLongType;
+	long long longlongType;
 
 	printf("Size of a char: %zu byte(s)\n", sizeof(charType));
 	printf("Size of an int: %zu byte(s)\n", sizeof(intType));

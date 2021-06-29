@@ -1,5 +1,5 @@
 #include "holberton.h"
-0;136;0c
+
 /**
  * print_rev - prints string in reverse followed by new line
  *
@@ -18,7 +18,8 @@ void print_rev(char *s)
 		length++;
 		s++;
 	}
-		s = s - length;
+
+	s = s - length;
 
 	while (length > 0)
 	{

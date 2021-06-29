@@ -1,0 +1,28 @@
+#include "holberton.h"
+
+/**
+ * rev_string - reverse a sting
+ *
+ * @s: string to reverse
+ *
+ * Return: void
+ */
+
+void rev_string(char *s)
+{
+
+	int length = 0, i, n;
+	char tmp;
+
+	while (*s != 0)
+	{
+		length++;
+		s++;
+	}
+
+	/*reset the pointer to point to  the first number */
+
+	s = s - length;
+	n = length - 1;
+
+}

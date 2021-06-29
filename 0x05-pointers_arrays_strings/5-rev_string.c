@@ -27,10 +27,10 @@ void rev_string(char *s)
 
 	for (i = 0; i < length / 2; i++)
 	  {
-	    tmp = *(s + i);
-	    *(s + 1) = *(s + n);
-	    *(s + n) = tmp;
-	    n--;
+		tmp = *(s + i);
+		*(s + 1) = *(s + n);
+		*(s + n) = tmp;
+		n--;
 	  }
 
 }

@@ -11,26 +11,20 @@
 void rev_string(char *s)
 {
 
-	int length = 0, i, n;
-	char tmp;
+	int len, i, half;
+	char temp;
 
-	while (*s != 0)
-	{
-		length++;
-		s++;
+	for (len = 0; s[len] != '\0'; len++);
+
+	i = 0;
+
+	half = len / 2;
+
+	while (half--)
+	{ 
+		temp = s[len - i - 1];
+		s[len - i - 1] = s[i];
+		s[i] = temp;
+		i++;
 	}
-
-	/*reset the pointer to point to  the first number */
-
-	s = s - length;
-	n = length - 1;
-
-	for (i = 0; i < length / 2; i++)
-	  {
-		tmp = *(s + i);
-		*(s + 1) = *(s + n);
-		*(s + n) = tmp;
-		n--;
-	  }
-
 }

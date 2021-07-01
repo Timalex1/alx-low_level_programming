@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 #include <stdio.h>
 
 /**
@@ -26,5 +25,4 @@ char *leet(char *c)
 	}
 
 	return (c);
-
 }

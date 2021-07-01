@@ -1,13 +1,6 @@
 #include "holberton.h"
 
 /**
- * *_strcat - concatenate two strings
- * @dest: pointer destination
- * @src: pointer source
- * Return: dest
- */
-
-/**
  * _strlen - return length of string
  *
  * @s: string to count
@@ -26,6 +19,14 @@ int _strlen(char *s)
 	}
 	return (counter);
 }
+
+/**
+ * *_strcat - concatenate two strings
+ * @dest: pointer destination
+ * @src: pointer source
+ * Return: dest
+ */
+
 
 char *_strcat(char *dest, char *src)
 {

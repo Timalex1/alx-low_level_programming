@@ -1,59 +1,44 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * isLower - determines whether ascii is lowercase
- * @c: character
- * Return: 1 if true, 0 if false
- */
+ * *cap_string - capitalize words
+ * @str: pointer
+ * Return: capitalzied string
+*/
 
-int isLower(char c)
+char *cap_string(char *str)
 {
-	 return (c >= 97 && c <= 122);
-}
+char sep[] = ",\t;\n; .!?\"(){}";
+int flag, i, ii;
 
-
-/**
- * isDelimiter - determines whether ascii is a delimiter
- * @c: character
- * Return: 1 if true, 0 if false
- */
-
-int isDelimeter(char c)
-{
-	int i;
-	char delimiter[] = " \t\n,.!?\"(){}";
-
-	for (i = 0; i < 12; i++)
-		if (c == delimiter[i])
-			return (1);
-	return (0);
-}
-
-/**
- * cap_string - capitalizes all words of a string
- * @s: input string
- * Return: string with capitalized words
- */
-
-char *cap_string(char *s)
-{
-	char *ptr = s;
-	int foundDelimit = 1;
-
-	while (*s)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (isDelimiter(*s))
-			foundDelimit = 1;
-		else if (isLower(*s) && foundDelimit)
+		flag = 0;
+
+		if (i == 0)
 		{
-			*s -= 32;
-			foundDelimit = 0;
+			flag = 1;
 		}
 		else
-			foundDelimit = 0;
-		s++;
-	}
-	return (ptr);
+		{
+			for (ii = 0; sep[ii] != '\0'; ii++)
+			{
+				if (str[i - 1] == sep[ii])
+				{
+					flag = 1;
+					break;
+				}
+			}
+		}
 
+		if (flag == 1)
+		{
+			if (str[i] <= 'z' && str[i] >= 'a')
+			{
+				str[i] -= ('a' - 'A');
+			}
+		}
+	}
+	
+	return (str);
 }

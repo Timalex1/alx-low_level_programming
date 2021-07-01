@@ -7,6 +7,13 @@
  * Return: dest
  */
 
+/**
+ * _strlen - return length of string
+ *
+ * @s: string to count
+ *
+ * Return: the size
+ */
 
 int _strlen(char *s)
 {

@@ -60,5 +60,3 @@ char *argstostr(int ac, char **av)
 	p[counter] = '\0';
 	return (p);
 }
-
-	    

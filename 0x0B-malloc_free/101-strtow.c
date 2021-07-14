@@ -21,7 +21,7 @@ int wrdcnt(char *s)
 				n++;
 
 		}
-		else id (i == 0)
+		else if (i == 0)
 			n++;
 
 	}

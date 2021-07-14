@@ -33,7 +33,7 @@ int _strlen(char *s)
  */
 
 
-char *_strdup(char str)
+char *_strdup(char *str)
 {
 
 	int s = str != NULL ? _strlen(str) : 0;

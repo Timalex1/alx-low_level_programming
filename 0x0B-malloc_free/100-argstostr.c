@@ -36,7 +36,7 @@ char *argstostr(int ac, char **av)
 	int i = 0, sizecounter = 0, j = 0, counter = 0;
 	char *p;
 
-	if (ac == 0 || ac == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (; i < ac; i++, sizecounter++)

@@ -48,10 +48,9 @@ char *_strdup(char *str)
 
 
 	while (s)
-	  {
+	{
 		p[s - 1] = str[s - 1];
 		s--;
-	  }
+	}
 	return (p);
-
 }

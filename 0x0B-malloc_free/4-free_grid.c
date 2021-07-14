@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "holberton."
+#include "holberton.h"
 #include <stdio.h>
 /**
  * free_grid - frees a 2 dimensional grid previously

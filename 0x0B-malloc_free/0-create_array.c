@@ -9,7 +9,7 @@
  */
 
 
-char create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 
 	char *p;
@@ -18,17 +18,16 @@ char create_array(unsigned int size, char c)
 		return (NULL);
 	
 
-	P = (char *)malloc(size);
+	p = (char *)malloc(size);
 
 	if (p == NULL)
 		return (NULL);
 
 	while (size)
 	{
-		p[size -1] = c;
+		p[size - 1] = c;
 		size--;
 	}
 
         return (p);
 }
-  

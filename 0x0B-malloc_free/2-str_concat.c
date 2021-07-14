@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 {
 	int l1 = s1 == NULL ? 0 : _strlen(s1);
 	int l2 = s2 == NULL ? 0 : _strlen(s2);
-	char *p = (char *)malloc(l1+l2+1);
+	char *p = (char *)malloc(l1 + l2 + 1);
 
 	if (p == NULL)
 		return (NULL);
@@ -66,5 +66,3 @@ char *str_concat(char *s1, char *s2)
 	return (p);
 
 }
-
-	  

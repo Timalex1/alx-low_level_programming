@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """island perimeter"""
 
-def island_permiter(grid):
-    """"returns perimeter"""
+
+def island_perimeter(grid):
+    """returns perimeter"""
     count = 0
     index = 0
 
